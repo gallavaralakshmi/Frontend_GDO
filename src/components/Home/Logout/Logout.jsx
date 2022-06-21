@@ -1,27 +1,26 @@
 import React from "react";
-import { Nav } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-import "../../../CSS/footer.css";
-
-const Header = () => {
+import { Nav } from "react-bootstrap";
+const Logout = () => {
   const navigate = useNavigate();
   return (
-    <div className="home-container">
-
-      <Nav className="justify-content-end" activeKey="mainpage"
+    <>
+      <Nav className="justify-content-end" activeKey="logout"
         onSelect={(selectedKey) => {
           console.log(`selected ${selectedKey}`);
           if (selectedKey == "mainpage") {
+           localStorage.removeItem("authToken")
+            localStorage.removeItem("userdetails")
             navigate("/mainpage");
 
           }
         }}
       >
         <Nav.Item>
-          <Nav.Link href="mainpage">GoalTracker</Nav.Link>
+          <Nav.Link href="mainpage" style={{ fontSize: "22px" }}>Logout</Nav.Link>
         </Nav.Item>
       </Nav>
-    </div>
+    </>
   )
 }
-export default Header;
+export default Logout;

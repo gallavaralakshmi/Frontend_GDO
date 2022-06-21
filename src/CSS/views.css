@@ -1,0 +1,88 @@
+table {
+  border-collapse: collapse;
+  margin: auto;
+  margin-top: 100px;
+}
+
+table,
+th,
+td {
+  border: 2px solid black;
+  font-size: 20px;
+  padding: 10px 15px 10px 15px;
+}
+
+tr {
+  border-right: 1px solid black;
+  border-left: 2px solid red;
+}
+
+.viewgoals-head {
+  text-align: center;
+}
+
+.viewgoals-button {
+  padding: 15px;
+  margin: 20px auto;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+
+}
+
+.viewgoals-button:hover {
+  opacity: 0.5;
+}
+
+.click-links {
+  text-align: center;
+  margin: 30px;
+}
+
+.update-form {
+  max-width: 1500px;
+  margin: auto;
+}
+
+.update-fields {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  width: 30%;
+  margin: 5px auto 5px auto;
+}
+
+.update-select {
+  text-align: center;
+  padding: 2px;
+  margin: auto;
+}
+
+.update-select label {
+  padding: 2px;
+}
+
+.update-button {
+  display: flex;
+  text-align: center;
+  margin: 10px auto 10px auto;
+}
+
+.update-button:hover {
+  opacity: 0.5;
+}
+
+.image {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.month-label {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+}

@@ -1,28 +1,38 @@
+.home-container {
+  background-color: #d9e7f5;
+  border: 1px solid #d9e7f5;
+}
+
 .social-container {
-    background: #eee;
-    padding: 25px 50px;
-   
-  }
-  a.social {
-    margin: 0 1rem;
-    transition: transform 250ms;
-    display: inline-block;
-  }
-  a.social:hover {
-    transform: translateY(-2px);
-  }
-  a.linkedin {
-    color: #313335;
-  }
-  
-  a.facebook {
-    color: #4968ad;
-  }
-  
-  a.twitter {
-    color: #49a1eb;
-  }
-  
-  a.instagram {
-    color: black;
-  }
+  background: #d9e7f5;
+  padding: 25px 50px;
+  display: flex;
+  justify-content: center;
+
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.linkedin {
+  color: #313335;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
+}
